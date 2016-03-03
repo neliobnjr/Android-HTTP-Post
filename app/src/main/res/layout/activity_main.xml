@@ -21,9 +21,9 @@
 
         <TextView
             android:id="@+id/tvName"
-            android:layout_width="50dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="APP_ID"
             android:layout_alignBaseline="@+id/etName"/>
         <EditText
             android:id="@+id/etName"
@@ -32,10 +32,10 @@
             android:layout_toRightOf="@+id/tvName"/>
         <TextView
             android:id="@+id/tvCountry"
-            android:layout_width="50dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvName"
-            android:text="Country"
+            android:text="APP_USER_NAME"
             android:layout_alignBaseline="@+id/etCountry"/>
         <EditText
             android:id="@+id/etCountry"
@@ -45,10 +45,10 @@
             android:layout_below="@+id/etName"/>
         <TextView
             android:id="@+id/tvTwitter"
-            android:layout_width="50dp"
+            android:layout_width="150dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/tvCountry"
-            android:text="Twitter"
+            android:text="APP_ONLINE_FLAG"
             android:layout_alignBaseline="@+id/etTwitter"/>
         <EditText
             android:id="@+id/etTwitter"

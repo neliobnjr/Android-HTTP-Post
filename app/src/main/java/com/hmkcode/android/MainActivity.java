@@ -77,9 +77,9 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
 
             // 3. build jsonObject
             JSONObject jsonObject = new JSONObject();
-            jsonObject.accumulate("name", person.getName());
-            jsonObject.accumulate("country", person.getCountry());
-            jsonObject.accumulate("twitter", person.getTwitter());
+            jsonObject.accumulate("APP_ID", person.getName());
+            jsonObject.accumulate("APP_USER_NAME", person.getCountry());
+            jsonObject.accumulate("APP_ONLINE_FLAG", person.getTwitter());
 
             // 4. convert JSONObject to JSON to String
             json = jsonObject.toString();
@@ -136,7 +136,10 @@ public class MainActivity extends AppCompatActivity implements OnClickListener
                 if(!validate())
                     Toast.makeText(getBaseContext(), "Enter some data!", Toast.LENGTH_LONG).show();
                 // call AsynTask to perform network operation on separate thread
-                new HttpAsyncTask().execute("http://hmkcode.appspot.com/jsonservlet");
+                //new HttpAsyncTask().execute("http://hmkcode.appspot.com/jsonservlet");
+
+                new HttpAsyncTask().execute("http://requestb.in/1m23xmf1");
+
                 break;
         }
 
